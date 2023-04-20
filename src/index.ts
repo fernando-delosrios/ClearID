@@ -43,11 +43,6 @@ export const connector = async () => {
 
     const getProvisioningAttributes = (): string[] => {
         return config.provisioningAttributes || []
-        // if (config.provisioningAttributes) {
-        //     return config.provisioningAttributes.split(',').map((x: string) => x.trim())
-        // } else {
-        //     return []
-        // }
     }
 
     const readAccount = async (id: string): Promise<Account> => {
